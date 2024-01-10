@@ -15,7 +15,7 @@ const makeBubble = () =>{
 }
 
 const timer = () =>{
-    var count = 4;
+    var count = 60;
     var counter = setInterval(()=>{
         count--;
         document.querySelector('#timer').textContent = count;
