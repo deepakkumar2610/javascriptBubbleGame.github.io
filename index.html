@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Game</title>
+    <link rel="stylesheet" href="style.css">
+    <!--jsdelivr-->
+<link href="https://cdn.jsdelivr.net/gh/repalash/gilroy-free-webfont@fonts/Gilroy-Extrabold.css" rel="stylesheet">
+<!--or github raw-->
+<link href="https://raw.githubusercontent.com/repalash/gilroy-free-webfont/fonts/Gilroy-Extrabold.css" rel="stylesheet">
+<!--jsdelivr-->
+<link href="https://cdn.jsdelivr.net/gh/repalash/gilroy-free-webfont@fonts/Gilroy-Light.css" rel="stylesheet">
+<!--or github raw-->
+<link href="raw.githubusercontent.com/repalash/gilroy-free-webfont/fonts/Gilroy-Light.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h3 class="head">Bubble Game</h3>
+    </header>
+    <main>
+        <div id="scoreCard">
+            <h2 class="congratsDiv">🎉 Congratulations 🎉 </h2>
+            <h3 class="scrTitle" style="margin-top: .5rem; font-weight: 600;">🎯 Your Score 🎯</h3>
+            <h1 id="fnlScr" style="margin-bottom: .5rem;font-weight: 500;color: #000;">50</h1>
+            <button id="playAgain" type="submit">Play again <span><i class="fa-solid fa-rotate-left"></i></span></button>
+        </div>
+        <section>
+            <div class="mainTop">
+                <div class="hit">Hit: <span id="hit"></span></div>
+                <div class="timer">Timer: <span id="timer"></span></div>
+                <div class="score">Score: <span id="score">0</span></div>
+            </div>
+            <div id="mainBottom">
+                <!-- <div class="bubble"></div> -->
+            </div>
+            <img id="gifClip" src="assets/game-over.gif" alt="gifClip">
+        </section>
+        <audio id="Audio" >
+            <source src="https://www.soundjay.com/misc/censor-beep-01.mp3"
+            type="audio/mpeg">
+        </audio>
+    </main>
+    <footer>
+       <h4>Copyright © 2024 DKV</h4> 
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/85c9b5e7ac.js" crossorigin="anonymous"></script>
+</body>
+</html>
